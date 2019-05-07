@@ -1,8 +1,7 @@
 import React from 'react'
-
-const NameCalling = props => {
-  console.log(props)
-  return <h1>Lord {props.name} </h1>
+class Title extends Component {
+  render() {
+     return <h1> {this.props.name} also known as {this.props.otherName} </h1>
   }
-  
+}  
 export default NameCalling
